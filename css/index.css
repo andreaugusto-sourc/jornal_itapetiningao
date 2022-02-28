@@ -1,0 +1,97 @@
+header{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    box-shadow: 0px 0px 3px black;
+    margin-bottom: 30px;
+
+}
+header div{
+    display: flex;
+    align-items: center;
+
+}
+header a{
+    font-size: 3rem;
+    font-family: 'Gideon Roman', 'cursive';
+    font-weight: bolder;
+    color: rgb(10, 85, 147)
+}
+header div .icon-header{
+    padding: 0rem 0.5rem;
+
+}
+header div .icon-header:hover{
+    color:rgba(0, 183, 255, 0.979) ;
+
+}
+#logo{
+    padding: 0rem 0.5rem;
+    object-fit: cover;
+    height: 70px;
+    width: 180px;
+}
+/* CONTEUDO */
+#noticia{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+}
+#noticia article{
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+}
+#noticia h1{
+  text-align: justify;
+  font-size: 6rem
+
+}
+#noticia p{
+  text-align: justify;
+  word-spacing: 0.5rem;
+  line-height: 2rem;
+  font-size: 2rem;
+}
+/* FOOTER */
+footer{
+    font-size: 1.5rem;
+    font-family: 'Lato',Georgia;
+    background-color: #3A3C41;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer div{
+    display: flex;
+    padding:2.5rem 0rem;
+}
+footer div aside{
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    border-right: 1px solid #666;
+
+}
+footer div aside article{
+    font-size: 1.7rem;
+    color: #fff;
+    margin-bottom: 2rem;
+
+}
+footer div aside a{
+    padding: 1.2rem 14rem 1.2rem 0rem;
+    text-align: justify;
+    color: #888;
+
+}
+footer img{
+  padding-right: 1rem;
+  margin: auto;
+  width: 120px
+}
