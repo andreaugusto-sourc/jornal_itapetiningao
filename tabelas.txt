@@ -1,0 +1,13 @@
+create table noticia (
+
+    idNot integer auto_increment not null,
+    tituloNot varchar(45) not null,
+    escalaNot varchar(30) not null,
+    textoNot text not null,
+    paragNot integer not null,
+    imgNot blob not null,
+    imgaltNot varchar(30) not null,
+    dataNot TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    primary key(idNot)
+
+);
