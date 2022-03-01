@@ -12,7 +12,7 @@
 <header>
     <div>
     <ion-icon name="menu-outline"></ion-icon>
-    <img src="images/logo3.png" alt="Logo" id="logo">
+    <img src="images/logo3.png" alt="Logo">
     </div>
 
     <a>Internacional</a>

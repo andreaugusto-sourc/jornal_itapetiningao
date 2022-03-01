@@ -5,7 +5,7 @@ header{
     justify-content: space-around;
     font-size: 2.5rem;
     box-shadow: 0px 0px 3px black;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 
 }
 header div{
@@ -17,7 +17,7 @@ header a{
     font-size: 3rem;
     font-family: 'Gideon Roman', 'cursive';
     font-weight: bolder;
-    color: rgb(10, 85, 147)
+    color: #0052A5;
 }
 header div .icon-header{
     padding: 0rem 0.5rem;
@@ -27,71 +27,81 @@ header div .icon-header:hover{
     color:rgba(0, 183, 255, 0.979) ;
 
 }
-#logo{
+header div img{
+    min-width: 120px;
     padding: 0rem 0.5rem;
     object-fit: cover;
-    height: 70px;
-    width: 180px;
+    height: 9vh;
+    width: 13.23vw;
 }
 /* CONTEUDO */
 #noticia{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 80%;
 
 }
 #noticia article{
+  width: 100%;
   font-size: 1.8rem;
   padding-bottom: 2rem;
 }
 #noticia h1{
-  text-align: justify;
-  font-size: 6rem
+  width: 100%;
+  font-size: 4rem
 
+}
+#noticia img{
+  width: 100%;
 }
 #noticia p{
   text-align: justify;
   word-spacing: 0.5rem;
-  line-height: 2rem;
-  font-size: 2rem;
+  line-height: 2.1rem;
+  font-size: 2.1rem;
 }
 /* FOOTER */
 footer{
     font-size: 1.5rem;
     font-family: 'Lato',Georgia;
     background-color: #3A3C41;
-    margin-top: 30px;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-footer div{
+footer section{
     display: flex;
     padding:2.5rem 0rem;
 }
-footer div aside{
+footer section div{
+    display: flex;
+
+}
+footer section aside{
     padding-left: 1em;
     display: flex;
     flex-direction: column;
     text-align: justify;
-    border-right: 1px solid #666;
+    border-right: 0.1rem solid #666;
 
 }
-footer div aside article{
+footer section aside article{
     font-size: 1.7rem;
     color: #fff;
     margin-bottom: 2rem;
 
 }
-footer div aside a{
+footer section aside a{
     padding: 1.2rem 14rem 1.2rem 0rem;
     text-align: justify;
     color: #888;
 
 }
 footer img{
-  padding-right: 1rem;
-  margin: auto;
-  width: 120px
+   padding-right: 1rem;
+   margin: auto 0;
+   width: 8.8vw;
 }
