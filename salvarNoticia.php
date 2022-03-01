@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('America/Sao_Paulo');
 
 require_once 'conexao.php';
 require_once 'crud/crud.php';
@@ -6,7 +7,7 @@ require_once 'crud/crud.php';
 $tituloNot = $_POST['tituloNot'];
 $escalaNot = $_POST['escalaNot'];
 $textoNot = $_POST['textoNot'];
-$paragNot = $_POST['paragNot'];
+$errataNot = "";
 $imgaltNot = $_POST['imgaltNot'];
 
 if (isset($_FILES["imgNot"])) {
@@ -43,7 +44,10 @@ if (isset($_FILES["imgNot"])) {
 }
 $imgNot = $novoCaminho ."." . $extensao;
 
-$resultado = adicionarNoticia ($conexao,$tituloNot,$escalaNot,$textoNot,$paragNot,$imgNot,$imgaltNot);
+
+$dataNot = date('d/m/Y \à\s H:i');
+
+$resultado = adicionarNoticia ($conexao,$tituloNot,$escalaNot,$textoNot,$errataNot,$imgNot,$imgaltNot,$dataNot);
 
 if($resultado) {
   echo "Inserção feita.<br> <a href='index.php'>Home</a> ou <a href='admin.php'>Admin</a>";

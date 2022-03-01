@@ -14,9 +14,6 @@
 <label for="textoNot">Texto da notícia</label>
 <textarea spellcheck="true" id="textoNot" name="textoNot" rows="15" cols="80"> </textarea>
 
-<label for="paragNot">Número de paragráfos</label>
-<input placeholder="Ex: 4"type="number" id="paragNot" name="paragNot">
-
 <label for="imgNot">Imagem ilustrativa</label>
 <input type="file" id="imgNot" name="imgNot">
 

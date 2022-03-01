@@ -1,8 +1,8 @@
 <?php
 
-function adicionarNoticia ($conexao,$tituloNot,$escalaNot,$textoNot,$paragNot,$imgNot,$imgaltNot) {
+function adicionarNoticia ($conexao,$tituloNot,$escalaNot,$textoNot,$errataNot,$imgNot,$imgaltNot,$dataNot) {
 
-  $comando = "INSERT INTO noticia (tituloNot,escalaNot,textoNot,paragNot,imgNot,imgaltNot) values ('$tituloNot','$escalaNot','$textoNot','$paragNot','$imgNot','$imgaltNot')";
+  $comando = "INSERT INTO noticia (tituloNot,escalaNot,textoNot,errataNot,imgNot,imgaltNot,dataNot) values ('$tituloNot','$escalaNot','$textoNot','$errataNot','$imgNot','$imgaltNot','$dataNot')";
 
   $resultado = mysqli_query($conexao,$comando);
   return $resultado;

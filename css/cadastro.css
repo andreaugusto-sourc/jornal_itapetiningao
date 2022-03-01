@@ -11,7 +11,7 @@ form{
 }
 input{
   height: 4.5vh;
-  width: 44vw;
+  width: 100%;
   margin-bottom: 2rem;
 
 }
