@@ -1,12 +1,12 @@
 create table noticia (
 
     idNot integer auto_increment not null,
-    tituloNot varchar(45) not null,
+    tituloNot text not null,
     escalaNot varchar(30) not null,
     textoNot text not null,
     errataNot text null,
     imgNot blob not null,
-    imgaltNot varchar(30) not null,
+    imgaltNot varchar(60) not null,
     dataNot varchar(40) not null,
     primary key(idNot)
 

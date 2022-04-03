@@ -17,7 +17,7 @@ $resultado = exibirNoticias($conexao);
 
   <div class="caixa-noticias">
 
-    <a href="noticia.php?id=<?= $noticia['idNot']?>"><img src="images/<?= $noticia['imgNot']?>" alt="<?= $noticia['imgaltNot']?>"></a>
+    <a href="noticia.php?id=<?= $noticia['idNot']?>"><img class="img-noticia" src="images/<?= $noticia['imgNot']?>" alt="<?= $noticia['imgaltNot']?>"></a>
     <a href="noticia.php?id=<?= $noticia['idNot']?>"><h1><?= $noticia['tituloNot']?></h1></a>
 
   </div>

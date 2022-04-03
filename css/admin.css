@@ -1,0 +1,21 @@
+.dashboard{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid #000;
+    font-size: 1.5rem;
+
+}
+.dashboard p{
+    word-wrap:break-word;
+    width: 150px;
+
+}
+.dashboard img{
+    object-fit: cover;
+    width: 17.64vw;
+    height: 21.2vh;
+
+}

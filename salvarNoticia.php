@@ -7,7 +7,7 @@ require_once 'crud/crud.php';
 $tituloNot = $_POST['tituloNot'];
 $escalaNot = $_POST['escalaNot'];
 $textoNot = $_POST['textoNot'];
-$errataNot = "";
+
 $imgaltNot = $_POST['imgaltNot'];
 
 if (isset($_FILES["imgNot"])) {
@@ -27,7 +27,7 @@ if (isset($_FILES["imgNot"])) {
     $novoCaminho = uniqid();
 
     $extensao = strtolower(pathinfo($imagemCaminho,PATHINFO_EXTENSION));
-    if ($extensao !=  "jpg" && $extensao != 'png' && $extensao != "webp" ) {
+    if ($extensao !=  "jpg" && $extensao != 'png' && $extensao != "webp" &&  $extensao != "jfif") {
         die("Tipo de arquivo inválido!");
     }
 
@@ -47,7 +47,7 @@ $imgNot = $novoCaminho ."." . $extensao;
 
 $dataNot = date('d/m/Y \à\s H:i');
 
-$resultado = adicionarNoticia ($conexao,$tituloNot,$escalaNot,$textoNot,$errataNot,$imgNot,$imgaltNot,$dataNot);
+$resultado = adicionarNoticia ($conexao,$tituloNot,$escalaNot,$textoNot,$imgNot,$imgaltNot,$dataNot);
 
 if($resultado) {
   echo "Inserção feita.<br> <a href='index.php'>Home</a> ou <a href='admin.php'>Admin</a>";

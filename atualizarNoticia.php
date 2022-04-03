@@ -56,4 +56,9 @@ $novaImg = $novoCaminho . "." . $extensao ;
 
 $resultado = atualizarNoticia($conexao,$idNot,$novoTitulo,$novaEscala,$novoTexto,$errataNot,$novaImg,$novoAlt); 
 
+if($resultado) {
+    echo "Atualização feita.<br> <a href='index.php'>Home</a> ou <a href='admin.php'>Admin</a>";
+  }else {
+    echo "Erro na Atualização!<br> <a href='index.php'>Home</a> ou <a href='admin.php'>Admin</a>";
+  }
  ?>
