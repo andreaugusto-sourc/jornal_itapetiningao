@@ -44,7 +44,7 @@ if (isset($_FILES["imgNot"])) {
 }
 $imgNot = $novoCaminho ."." . $extensao;
 
-
+$errataNot = "";
 $dataNot = date('d/m/Y \à\s H:i');
 
 $resultado = adicionarNoticia ($conexao,$tituloNot,$escalaNot,$textoNot,$imgNot,$imgaltNot,$dataNot);

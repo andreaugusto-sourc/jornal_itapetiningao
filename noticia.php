@@ -17,9 +17,9 @@ $noticia['dataNot'] = implode("/",array_reverse(explode("-",$noticia['dataNot'])
 <div id="noticia">
 <h1> <?= $noticia['tituloNot']?> </h1>
 <article>Por André Martins - <?= $noticia['dataNot']?> </article>
-<div id="caixa-img">
+
 <img class="img-noticia" src="images/<?= $noticia['imgNot']?>">
-</div>
+
 <aside><?= $noticia['textoNot']?></aside>
 </div>
 

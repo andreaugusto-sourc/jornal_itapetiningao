@@ -11,13 +11,13 @@
   .container{
     width: 100%;
   }
-  footer section{
-    flex-direction: column;
-    align-items: center;
-
+  .caixa-noticias{
+    width: 90%;
+  }
+  footer section div{
+   flex-direction: column;
   }
   footer section aside{
-    min-width: 250px;
     border-left: 0.1rem #666 solid;
 
   }
@@ -27,18 +27,46 @@
   html{
     font-size: 45%;
   }
-  footer section aside{
-    min-width: 210px;
 
+
+  .caixa-noticias h1{
+    font-size: 2.5rem;
 
   }
-
-
-
+  .caixa-noticias img{
+    min-width: 230px;
+  }
 }
-@media (max-width:320px) {
-  html{
-    font-size: 40%;
+
+@media (max-width:450px) {
+  header a{
+    font-size: 2rem;
+  }
+  .caixa-noticias{
+    flex-direction: column-reverse;
+  }
+  .caixa-noticias img{
+    padding: 0;
+    min-width: 88vw;
+  }
+  footer section{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+  }
+  footer section div article{
+    border-top: 0.1rem solid gray;
+    padding-top: 2rem;
+    margin-bottom: 0;
+  }
+  footer section div aside{
+    border: none;
+    margin: auto;
+    width: 250px;
+    font-size: 2rem;
+  
   }
 
 }
+

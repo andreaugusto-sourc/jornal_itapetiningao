@@ -11,7 +11,7 @@ $resultado = exibirNoticias($conexao);
 
 <div class="container">
 
-<div class="coluna">
+
 
   <?php while($noticia = mysqli_fetch_assoc($resultado)) : ?>
 
@@ -26,7 +26,7 @@ $resultado = exibirNoticias($conexao);
   <?php endwhile ?>
 
 
-</div>
+
 
 
 
