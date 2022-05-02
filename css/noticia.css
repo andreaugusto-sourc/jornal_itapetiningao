@@ -18,11 +18,13 @@
 
 }
 #noticia img{
+  object-fit: fill;
+  height: 76vh;
   width: 100%;
 }
 #noticia p{
   text-align: justify;
   word-spacing: 0.5rem;
   line-height: 2.1rem;
-  font-size: 21px;
+  font-size: 2.1rem;
 }

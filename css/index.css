@@ -49,6 +49,8 @@ header div img{
   color: black;
 }
 .caixa-noticias img{
+    object-fit: cover;
+    height:35vh;
     min-width: 280px;
     width: 32vw;
     padding: 0rem 2rem; 
